@@ -36,7 +36,12 @@ def run_server(app):
 if __name__ == "__main__":
     # Init spark context and load libraries
     sc = init_spark_context()
-    dataset_path = os.path.join('/Users/edv/Documents/ML/RecommendVnsDoc')
+
+    #for run on server
+    dataset_path = os.path.join('datasets', 'data-recommend')
+
+    # for run on local
+    #dataset_path = os.path.join('/Users/edv/Documents/ML/RecommendVnsDoc')
     app = create_app(sc, dataset_path)
 
     # start web server
