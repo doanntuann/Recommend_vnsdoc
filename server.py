@@ -38,10 +38,10 @@ if __name__ == "__main__":
     sc = init_spark_context()
 
     #for run on server
-    #dataset_path = os.path.join('datasets', 'data-recommend')
+    dataset_path = os.path.join('datasets', 'data-recommend')
 
     # for run on local
-    dataset_path = os.path.join('/Users/edv/Documents/ML/RecommendVnsDoc')
+    #dataset_path = os.path.join('/Users/edv/Documents/ML/RecommendVnsDoc')
     app = create_app(sc, dataset_path)
 
     # start web server
