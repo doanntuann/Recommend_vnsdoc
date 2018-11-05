@@ -17,3 +17,7 @@
 - download spark 
   wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz && tar xf spark-2.3.0-bin-hadoop2.7.tgz
 - Run background on vps: nohup python server.py
+
+
+### Read more in here 
+https://github.com/jadianes/spark-movie-lens
