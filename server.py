@@ -24,8 +24,8 @@ def run_server(app):
     cherrypy.config.update({
         'engine.autoreload.on': True,
         'log.screen': True,
-        'server.socket_port': 4000,
-        'server.socket_host': '127.0.0.1'
+        'server.socket_port': 4069,
+        'server.socket_host': '178.128.123.19'
     })
 
     # Start the CherryPy WSGI web server
@@ -38,10 +38,10 @@ if __name__ == "__main__":
     sc = init_spark_context()
 
     #for run on server
-    dataset_path = os.path.join('datasets', 'data-recommend')
+    #dataset_path = os.path.join('datasets', 'data-recommend')
 
     # for run on local
-    #dataset_path = os.path.join('/Users/edv/Documents/ML/RecommendVnsDoc')
+    dataset_path = os.path.join('/RecommendVnsDoc')
     app = create_app(sc, dataset_path)
 
     # start web server
