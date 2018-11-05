@@ -1,5 +1,5 @@
 
-#Recommendtion for website vnsdoc.com
+# Recommendtion for website vnsdoc.com
 
 ### Requiment (recommend use)
 - spark-2.3.0-bin-hadoop2.7
@@ -14,10 +14,10 @@
 - `server.py` initialises a CherryPy webserver after creating a Spark context and Flask web app using the previous.
 
 ### Setup server
-- run `download_dataset.sh` for download data-recommend. (after need change `dataset_path` in `server.py`)
-- run `start_server.sh` for submit pyspark.
-- download spark on host/vps/etc - unzip on root path.
-  wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz && tar xf spark-2.3.0-bin-hadoop2.7.tgz
+- Run `download_dataset.sh` for download data-recommend. (after need change `dataset_path` in `server.py`)
+- Run `start_server.sh` for submit pyspark.
+- Download spark on host/vps/etc - unzip to root path.
+- wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz && tar xf spark-2.3.0-bin-hadoop2.7.tgz
 - `import package` requiment
 - Run `python server.py`
 - Run scrip server on background at VPS: `nohup python server.py` (if need)
@@ -27,5 +27,8 @@
 - domain/user_id/ratings/count: GET top recommendtion by user_id
 - domain/user_id/ratings/ : POST ratings - still don't know how to use 😅 (update later)
 
-#Read more in here 
-https://github.com/jadianes/spark-movie-lens
+### TEST 
+http://178.128.123.19
+
+### Read more in here 
+- https://github.com/jadianes/spark-movie-lens
