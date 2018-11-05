@@ -25,7 +25,7 @@
 ### USING API
 - domain/user_id/ratings/post_id: GET ratings with user_id and post_id
 - domain/user_id/ratings/count: GET top recommendtion by user_id
-- domain/user_id/ratings/ : POST ratings - still don't know how to use 😅 (update later)
+- domain/user_id/ratings/ : POST ratings - post binary file
 
 ### TEST 
 http://178.128.123.19
