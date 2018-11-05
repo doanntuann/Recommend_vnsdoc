@@ -1,23 +1,31 @@
 
-### USING
+### Recommendtion for website vnsdoc.com
+
+# Requiment (recommend use)
 - spark-2.3.0-bin-hadoop2.7
 - Python 2.7
 - Java 8
 - Flask
 - CherryPy
 
-### Details
-- engine is a python for trainning data recommend by .csv.
-- app.py is a Flask web application that defines a RESTful-like API around the engine.
-- server.py initialises a CherryPy webserver after creating a Spark context and Flask web app using the previous.
+# Python file
+- `engine.py` is a python for trainning data recommend by exten .csv.
+- `app.py is` a Flask web application that defines a RESTful-like API around the engine.
+- `server.py` initialises a CherryPy webserver after creating a Spark context and Flask web app using the previous.
 
-### Setup server
-- run download_dataset.sh for download data-recommend.
-- run start_server.sh for submit pyspark.
-- download spark 
+# Setup server
+- run `download_dataset.sh` for download data-recommend. (after need change `dataset_path` in `server.py`)
+- run `start_server.sh` for submit pyspark.
+- download spark on host/vps/etc - unzip on root path.
   wget https://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz && tar xf spark-2.3.0-bin-hadoop2.7.tgz
-- Run background on vps: nohup python server.py
+- `import package` requiment
+- Run `python server.py`
+- Run scrip server on background at VPS: `nohup python server.py` (if need)
 
+# USING API
+- domain/user_id/ratings/post_id: GET ratings with user_id and post_id
+- domain/user_id/ratings/count: GET top recommendtion by user_id
+- domain/user_id/ratings/ : POST ratings - still don't know how to use :)))
 
-### Read more in here 
+#Read more in here 
 https://github.com/jadianes/spark-movie-lens
