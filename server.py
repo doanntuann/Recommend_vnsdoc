@@ -41,7 +41,7 @@ if __name__ == "__main__":
     #dataset_path = os.path.join('datasets')
 
     # for run on local
-    dataset_path = os.path.join('./Recommend_vnsdoc')
+    dataset_path = os.path.join('./')
     app = create_app(sc, dataset_path)
 
     # start web server
