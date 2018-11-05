@@ -28,7 +28,7 @@
 - domain/user_id/ratings/ : POST ratings - post binary file (example binary file: `user_ratings.file`)
 
 ### TEST 
-http://178.128.123.19
+http://ml.vnsdoc.com/
 
 ### Read more in here 
 - https://github.com/jadianes/spark-movie-lens
